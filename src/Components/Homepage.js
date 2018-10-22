@@ -4,7 +4,7 @@ import ForecastItem from './ForecastItem';
 import Clock from './Clock';
 import Ghost from './Ghost';
 
-class WeatherPage extends Component {
+class Homepage extends Component {
     constructor(props) {
         super(props);
 
@@ -38,4 +38,4 @@ class WeatherPage extends Component {
     }
 }
 
-export default WeatherPage;
+export default Homepage;
