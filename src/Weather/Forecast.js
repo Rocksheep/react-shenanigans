@@ -17,6 +17,7 @@ class Forecast {
             case 802:
                 return 'sunny-cloudy.svg';
             case 803:
+            case 804:
                 return 'cloudy.svg';
             case 500:
                 return 'rainy.svg';
@@ -34,6 +35,7 @@ class Forecast {
             case 802:
                 return 'sunny-cloudy';
             case 803:
+            case 804:
                 return 'cloudy';
             case 500:
                 return 'rainy';

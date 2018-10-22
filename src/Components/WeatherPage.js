@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import OpenWeatherMapResource from '../Weather/WeatherResources/OpenWeatherMapResource';
 import ForecastItem from './ForecastItem';
+import Clock from './Clock';
+import Ghost from './Ghost';
 
 class WeatherPage extends Component {
     constructor(props) {
@@ -23,21 +25,12 @@ class WeatherPage extends Component {
         );
         
         return <div>
-            <h1>What is up</h1>
+            <Clock />
             <div>
                 {forecastElements}
             </div>
-            <div className="ghost-box">
-                <div className="ghost">
-                    <div className="mouth"></div>
-                </div>
-                <div className="ghost-bottom">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+
+            <Ghost />
         </div>
     }
 
