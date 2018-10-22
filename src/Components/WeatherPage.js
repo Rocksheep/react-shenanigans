@@ -29,7 +29,6 @@ class WeatherPage extends Component {
             <div>
                 {forecastElements}
             </div>
-
             <Ghost />
         </div>
     }

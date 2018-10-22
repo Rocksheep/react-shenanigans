@@ -4,7 +4,7 @@ import ForecastBuilder from "../ForecastBuilder";
 class OpenWeatherMapResource extends WeatherResource {
 
     findForecastForCity(city) {
-        fetch('https://api.openweathermap.org/data/2.5/forecast?q='+city+'&units=metric&appid=4908fe39d34da8300958fd8fc11bbe45')
+        fetch('https://api.openweathermap.org/data/2.5/forecast?q='+city+'&units=metric&appid='+process.env.REACT_APP_OPEN_WEATHER_MAP_KEY)
             .then((response) => response.json())
             .then((json) => this.mapForecasts(json));
     }
